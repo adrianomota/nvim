@@ -19,7 +19,7 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 --save file
-keymap('n', '<C-s', ';w<CR>', opts)
+keymap("n", "<C-s>", ":w<CR>", opts)
 
 -- Normal --
 -- Better window navigation
