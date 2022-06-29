@@ -5,7 +5,7 @@ elixir.setup({
   repo = "mhanberg/elixir-ls", -- defaults to elixir-lsp/elixir-ls
   branch = "mh/all-workspace-symbols", -- defaults to nil, just checkouts out the default branch, mutually exclusive with the `tag` option
   tag = "v0.9.0", -- defaults to nil, mutually exclusive with the `branch` option
-  cmd = { "/home/wlliot/.elixiir-ls/release/language_server.sh" },
+  cmd = { "/home/elliot/.elixir-ls/release/language_server.sh" },
   -- default settings, use the `settings` function to override settings
   settings = elixir.settings({
     dialyzerEnabled = true,
