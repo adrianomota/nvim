@@ -22,13 +22,16 @@ dashboard.section.buttons.val = {
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
+local plugins_count = vim.fn.len(vim.fn.globpath("~/.local/share/nvim/site/pack/packer/start", "*", 0, 1))
+vim.g.dashboard_custom_footer = { "Loaded " .. plugins_count .. " Plugins" }
+
 local function footer()
 -- NOTE: requires the fortune-mod package to work
 	-- local handle = io.popen("fortune")
 	-- local fortune = handle:read("*a")
 	-- handle:close()
 	-- return fortune
-	return "Adriano Mota | Software Engineer"
+	return { "😎 Adriano Mota | Software Engin1eer | 🚀 Loaded " .. plugins_count .. " Plugins"}
 end
 
 dashboard.section.footer.val = footer()
