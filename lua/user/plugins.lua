@@ -64,7 +64,8 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use 'folke/tokyonight.nvim'
   use 'norcalli/nvim-colorizer.lua'
-
+  use { "catppuccin/nvim", as = "catppuccin" }
+ 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
