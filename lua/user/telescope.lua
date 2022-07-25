@@ -92,5 +92,12 @@ telescope.setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
+     file_browser = { hidden = true }
   },
 }
+
+telescope.load_extension "file_browser"
+vim.keymap.set("n", "<Leader>n", telescope.extensions.file_browser.file_browser)
+vim.keymap.set("n", "<Leader>f", require("telescope.builtin").find_files)
+vim.keymap.set("n", "<Leader>t", require("telescope.builtin").treesitter)
+
