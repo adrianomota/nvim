@@ -16,14 +16,14 @@ null_ls.setup({
 		formatting.stylua,
 
     --diagnostics
-    null_ls.builtins.diagnostics.eslint_d,
+    -- null_ls.builtins.diagnostics.eslint_d,
     null_ls.builtins.diagnostics.credo,
 
     --formatting
-    null_ls.builtins.formatting.autopep8,
-		null_ls.builtins.formatting.eslint_d,
-		null_ls.builtins.formatting.gofmt,
-		null_ls.builtins.formatting.prettierd,
-		null_ls.builtins.formatting.rustfmt,
+  --   null_ls.builtins.formatting.autopep8,
+		-- null_ls.builtins.formatting.eslint_d,
+		-- null_ls.builtins.formatting.gofmt,
+		-- null_ls.builtins.formatting.prettierd,
+		-- null_ls.builtins.formatting.rustfmt,
 	},
 })

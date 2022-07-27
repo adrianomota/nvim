@@ -1,10 +1,10 @@
-vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 
 require("catppuccin").setup({
 	dim_inactive = {
 		enabled = false,
 		shade = "dark",
-		percentage = 0.15,
+		percentage = 0.20,
 	},
 	transparent_background = true,
 	term_colors = false,
