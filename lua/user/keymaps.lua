@@ -18,6 +18,15 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+--select --all
+keymap("n", "<C-a>","gg<S-v>G", opts)
+
+--split window
+keymap("n","sh", ":split<Return><C-w>w", opts)
+keymap("n","sv", ":vsplit<Return><C-w>w", opts)
+
+
+
 --save file
 keymap("n", "<C-s>", ":w<CR>", opts)
 
